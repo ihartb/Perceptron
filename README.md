@@ -150,7 +150,7 @@ I simply took the numerical value of each character in the file and added it to 
 Perceptron uses linear regression techniques to properly classify images. We train the computer to make a line that takes an x value, and passes it through a linear function to output an y value. The x value is the extracted feature, and the y value is the computer’s prediction of the label. The learning algorithm continuously changes this line’s placement in space and its slope in a multidimensional coordinate system until the error between the prediction and label is minimized. 
 
 ###
-For a more detailed explanation and analysis of this project click [here](https://drive.google.com/open?id=12sI0uIjCGAudbDF_309E8qPLNZ1xP_AM). 
+For a more detailed explanation and analysis of this project click [here](Perceptron.pdf). 
 
 ## Author
-# Bharti Mehta
+### Bharti Mehta
