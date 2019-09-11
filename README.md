@@ -153,4 +153,4 @@ Perceptron uses linear regression techniques to properly classify images. We tra
 For a more detailed explanation and analysis of this project click [here](Perceptron.pdf). 
 
 ## Author
-### Bharti Mehta
+Bharti Mehta
