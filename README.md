@@ -3,8 +3,8 @@ Perceptron is a widely used algorithm that teaches computers to label a set of i
 This project implements a perceptron algorithm from scratch and then uses it to classify partially processed images of faces and digits. 
 
 ## Getting Started
+
 ### Relevant Files
-----------------
 #### 1. Images
 This folder contains the raw partially processed images and labels for faces and numbers and processed images and labels. 
 #### 2. ProcessData.py
