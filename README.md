@@ -1,5 +1,5 @@
 # Perceptron
-Perceptron is a widely used algorithm that teaches computers to label a set of images. 
+Perceptron is a widely used algorithm that teaches computers how to label a set of images. 
 This project implements a perceptron algorithm from scratch and then uses it to classify partially processed images of faces and digits. 
 
 ## Using the code 
@@ -147,17 +147,10 @@ The numbers from 0 to 1 represent the darkness of the image at that point. 0 mea
 I simply took the numerical value of each character in the file and added it to a numpy vector. For the digits, each digit was represented in the .txt file using 28x28 characters, therefore our feature was a 784x1 vector (28x28=784) filled with 0,.5, and 1 at the appropriate location. Similarly, for the faces, which were represented using 70x60 characters, we had a 4200x1 vector.
 
 ### How the computer learns in Perceptron.py
-Perceptron uses linear regression techniques to properly classify images. We train the computer to make a line that takes an x value, and passes it through a linear function to output an y value. This y value may be passed through an activation function to map all predictions either 0 or 1, or between 0 and 1, etc. Classic perceptron takes any y >= 0, makes it a 1, and otherwise a 0. We used a sigmoid activation function that passed y through the sigmoid function: 
-$ f = \frac {1}{1+e^{-y}} $
-The x value is the extracted feature, and the f value is the computer’s prediction of the label. The learning algorithm continuously changes this line’s placement and its slope in a multidimensional coordinate system until the error between the prediction and label is minimized. 
+Perceptron uses linear regression techniques to properly classify images. We train the computer to make a line that takes an x value, and passes it through a linear function to output an y value. The x value is the extracted feature, and the y value is the computer’s prediction of the label. The learning algorithm continuously changes this line’s placement in space and its slope in a multidimensional coordinate system until the error between the prediction and label is minimized. 
 
-For digits, we have ten equations for classifying each digit.
-y0 = b0 +w0,0x0+w0,1x1+...+w0,783x783
-y1 = b1 +w1,0x0+w1,1x1+...+w1,783x783
-…
-y9 = b9 +w9,0x0+w9,1x1+...+w9,783x783
-wi,j=weight for digit i associated with the value at j in the feature vector x
-This method lends itself very obviously to linear algebra operations. 
+###
+For a more detailed explanation and analysis of this project click [here](https://drive.google.com/open?id=12sI0uIjCGAudbDF_309E8qPLNZ1xP_AM). 
 
-
-
+## Author
+# Bharti Mehta
