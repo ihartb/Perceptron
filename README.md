@@ -3,27 +3,6 @@ Perceptron is a widely used algorithm that teaches computers how to label a set 
 This project implements a perceptron algorithm from scratch and then uses it to classify partially processed images of faces and digits. 
 
 ## Using the code 
-
-### Relevant Files
-#### 1. Images
-This folder contains the raw partially processed images and labels for faces and numbers and processed images and labels. 
-#### 2. ProcessData.py
-This code processes the raw images and labels from the Images file. Additionally, it pickles (serializes) the processed images and labels to be instantly used during runtime without having to process them ever again. These processed images and labels are saved under ProcessedData in Images. 
-#### 3. Perceptron.py
-Perceptron.py does is the core of this project as it is the learning algorithm itself. It not only trains the algorithm to classify the training images based on training labels, but also tests the algorithm's "knowledge" on a separate set of test images and test labels. 
-#### 4. Interactive.py
-This code takes user inputs through the terminal to run the project. Users can:
-- Change the percentage of total training data to use when training the algorithm (defaulted to 50%)
-- Change the number of epochs (number of times to run the training algorithm on the same training data before running it on testing data) (defaulted to 3 epochs)
-- Test algorithm on face data
-- Test algorithm on digit data 
-
-Both testing algorithms print: 
-  - Percentage of training data used for training
-  - Number of epochs
-  - Time the algorithm took to run
-  - Accuracy of algorithms predictions on the test data
-
 ### Installation and Running
 - Download as zip
 - Unzip file
@@ -38,6 +17,26 @@ If you receive an error which states that numpy module cannot be found, download
 pip install numpy
 ```
 
+## Relevant Files
+### 1. Images
+This folder contains the raw partially processed images and labels for faces and numbers and processed images and labels. 
+### 2. ProcessData.py
+This code processes the raw images and labels from the Images file. Additionally, it pickles (serializes) the processed images and labels to be instantly used during runtime without having to process them ever again. These processed images and labels are saved under ProcessedData in Images. 
+### 3. Perceptron.py
+Perceptron.py does is the core of this project as it is the learning algorithm itself. It not only trains the algorithm to classify the training images based on training labels, but also tests the algorithm's "knowledge" on a separate set of test images and test labels. 
+### 4. Interactive.py
+This code takes user inputs through the terminal to run the project. Users can:
+- Change the percentage of total training data to use when training the algorithm (defaulted to 50%)
+- Change the number of epochs (number of times to run the training algorithm on the same training data before running it on testing data) (defaulted to 3 epochs)
+- Test algorithm on face data
+- Test algorithm on digit data 
+
+Both testing algorithms print: 
+  - Percentage of training data used for training
+  - Number of epochs
+  - Time the algorithm took to run
+  - Accuracy of algorithms predictions on the test data
+  
 ## Theory
 ### Feature Extraction in ProcessData.py
 The raw partially processed images are represented using 3 characters: ' ', '+', '#'.
